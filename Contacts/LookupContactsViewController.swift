@@ -46,7 +46,6 @@ class LookupContactsViewController: UIViewController {
         dataSource.applySnapshot()
     }
     
-    
     private func setupNavigationItem() {
         title = contactsTitle
         let searchController = UISearchController(searchResultsController: nil)
@@ -73,11 +72,7 @@ extension LookupContactsViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         let searchText = searchController.searchBar.text ?? ""
         
-        filterContentForSearchText(searchText)
-        dataSource.applySnapshot(isFiltering: isFiltering)
-    }
-    
-    private func filterContentForSearchText(_ searchText: String) {
         viewModel.filterContentForSearchText(searchText)
+        dataSource.applySnapshot(isFiltering: isFiltering)
     }
 }
