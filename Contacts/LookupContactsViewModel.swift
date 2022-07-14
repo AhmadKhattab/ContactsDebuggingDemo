@@ -72,36 +72,3 @@ class LookUpContactsViewModel {
         filteredContactsDicObservable.value = [topNameMatches: filteredContacts]
     }
 }
-
-class Observable<T> {
-    typealias Observer = (T) -> Void
-    var observers: [Observer]
-    var value: T? {
-        didSet {
-            guard let value = value else {
-                return
-            }
-            notifyObservers(value: value)
-        }
-    }
-    
-    init(value: T) {
-        self.value = value
-        self.observers = []
-    }
-    
-    private func notifyObservers(value: T) {
-        observers.forEach { observer in
-            observer(value)
-        }
-    }
-    
-    func bind(observer: @escaping Observer) {
-        observers.append(observer)
-        guard let value = value else {
-            return
-        }
-        notifyObservers(value: value)
-    }
-}
-
