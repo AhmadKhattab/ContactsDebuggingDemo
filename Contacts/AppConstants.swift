@@ -14,3 +14,6 @@ let unknownContact: String = "Unknown"
 let contactCellReusableIdentifier: String = "contactCell"
 let topNameMatches: String = "Top Name Matches"
 
+// MARK: - Recent Call Screen
+let recentCallCellReusableIdentifier: String = "recentCallCell"
+let recentsHeaderReusableIdentifier: String = "recentsHeader"

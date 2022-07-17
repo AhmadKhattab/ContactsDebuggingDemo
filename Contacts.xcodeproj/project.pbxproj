@@ -17,6 +17,12 @@
 		C4ECA2AE287EC8CE009B41F4 /* LookupContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ECA2AD287EC8CE009B41F4 /* LookupContactsViewModel.swift */; };
 		C4ECA2B0287EE105009B41F4 /* ContactsTableViewDiffableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ECA2AF287EE105009B41F4 /* ContactsTableViewDiffableDataSource.swift */; };
 		C4ECA2B2287EE2AF009B41F4 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ECA2B1287EE2AF009B41F4 /* Observable.swift */; };
+		C4ECA2B62882E0FB009B41F4 /* RecentCallsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ECA2B52882E0FB009B41F4 /* RecentCallsViewController.swift */; };
+		C4ECA2B928830B5A009B41F4 /* RecentCallTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ECA2B728830B5A009B41F4 /* RecentCallTableViewCell.swift */; };
+		C4ECA2BA28830B5A009B41F4 /* RecentCallTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4ECA2B828830B5A009B41F4 /* RecentCallTableViewCell.xib */; };
+		C4ECA2BC28834696009B41F4 /* RecentsTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ECA2BB28834696009B41F4 /* RecentsTableViewHeader.swift */; };
+		C4ECA2BE28835B98009B41F4 /* RecentCallsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ECA2BD28835B98009B41F4 /* RecentCallsViewModel.swift */; };
+		C4ECA2C028835E41009B41F4 /* RecentCallViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ECA2BF28835E41009B41F4 /* RecentCallViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +38,12 @@
 		C4ECA2AD287EC8CE009B41F4 /* LookupContactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookupContactsViewModel.swift; sourceTree = "<group>"; };
 		C4ECA2AF287EE105009B41F4 /* ContactsTableViewDiffableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewDiffableDataSource.swift; sourceTree = "<group>"; };
 		C4ECA2B1287EE2AF009B41F4 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		C4ECA2B52882E0FB009B41F4 /* RecentCallsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentCallsViewController.swift; sourceTree = "<group>"; };
+		C4ECA2B728830B5A009B41F4 /* RecentCallTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentCallTableViewCell.swift; sourceTree = "<group>"; };
+		C4ECA2B828830B5A009B41F4 /* RecentCallTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentCallTableViewCell.xib; sourceTree = "<group>"; };
+		C4ECA2BB28834696009B41F4 /* RecentsTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentsTableViewHeader.swift; sourceTree = "<group>"; };
+		C4ECA2BD28835B98009B41F4 /* RecentCallsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentCallsViewModel.swift; sourceTree = "<group>"; };
+		C4ECA2BF28835E41009B41F4 /* RecentCallViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentCallViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +76,7 @@
 		C4436749287C191200E04CD2 /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
+				C4ECA2B52882E0FB009B41F4 /* RecentCallsViewController.swift */,
 				C443674A287C191200E04CD2 /* AppDelegate.swift */,
 				C443674C287C191200E04CD2 /* SceneDelegate.swift */,
 				C443674E287C191200E04CD2 /* LookupContactsViewController.swift */,
@@ -75,6 +88,11 @@
 				C4ECA2AD287EC8CE009B41F4 /* LookupContactsViewModel.swift */,
 				C4ECA2AF287EE105009B41F4 /* ContactsTableViewDiffableDataSource.swift */,
 				C4ECA2B1287EE2AF009B41F4 /* Observable.swift */,
+				C4ECA2B728830B5A009B41F4 /* RecentCallTableViewCell.swift */,
+				C4ECA2B828830B5A009B41F4 /* RecentCallTableViewCell.xib */,
+				C4ECA2BB28834696009B41F4 /* RecentsTableViewHeader.swift */,
+				C4ECA2BD28835B98009B41F4 /* RecentCallsViewModel.swift */,
+				C4ECA2BF28835E41009B41F4 /* RecentCallViewModel.swift */,
 			);
 			path = Contacts;
 			sourceTree = "<group>";
@@ -137,6 +155,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4ECA2BA28830B5A009B41F4 /* RecentCallTableViewCell.xib in Resources */,
 				C4436757287C191500E04CD2 /* LaunchScreen.storyboard in Resources */,
 				C4436754287C191500E04CD2 /* Assets.xcassets in Resources */,
 				C4436752287C191200E04CD2 /* Main.storyboard in Resources */,
@@ -151,10 +170,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C443674F287C191200E04CD2 /* LookupContactsViewController.swift in Sources */,
+				C4ECA2B62882E0FB009B41F4 /* RecentCallsViewController.swift in Sources */,
 				C4ECA2AE287EC8CE009B41F4 /* LookupContactsViewModel.swift in Sources */,
+				C4ECA2BC28834696009B41F4 /* RecentsTableViewHeader.swift in Sources */,
 				C443674B287C191200E04CD2 /* AppDelegate.swift in Sources */,
+				C4ECA2B928830B5A009B41F4 /* RecentCallTableViewCell.swift in Sources */,
 				C4ECA2B2287EE2AF009B41F4 /* Observable.swift in Sources */,
+				C4ECA2BE28835B98009B41F4 /* RecentCallsViewModel.swift in Sources */,
 				C443674D287C191200E04CD2 /* SceneDelegate.swift in Sources */,
+				C4ECA2C028835E41009B41F4 /* RecentCallViewModel.swift in Sources */,
 				C4ECA2B0287EE105009B41F4 /* ContactsTableViewDiffableDataSource.swift in Sources */,
 				C4436765287CEB6600E04CD2 /* AppConstants.swift in Sources */,
 			);
